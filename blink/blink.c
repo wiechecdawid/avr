@@ -6,9 +6,9 @@
 int main() {
     DDRB |= (1 << DDB5);
     while(1){
-      PORTB |= (1 << PB5);
+      PORTB |= (1 << PB2);
       _delay_ms(BLINK_DELAY_MS);
-      PORTB &= ~(1 << PB5);
+      PORTB &= ~(1 << PB2);
       _delay_ms(BLINK_DELAY_MS);
     }
 

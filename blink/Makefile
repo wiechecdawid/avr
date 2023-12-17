@@ -1,16 +1,16 @@
 SRC=blink
 CXX=avr-gcc
-DIR=/etc
+DIR=/..
 
 # Compiler config
-MCU=-mmcu=atmega32u4
-CPU_SPEED=-DF_CPU=16000000UL
+MCU=-mmcu=atmega328p
+CPU_SPEED=-DF_CPU=8000000UL
 CFLAGS=$(MCU) $(CPU_SPEED) -Os -w -Wl,--gc-sections -ffunction-sections -fdata-sections
 
 # Upload config
 PORT=/dev/ttyACM0
-AVRDUDE_MCU=m32u4
-AVRDUDE_PROG=arduino
+AVRDUDE_MCU=m328p
+AVRDUDE_PROG=pi_1
 AVRDUDE_SPEED=115200
 AVRDUDE_CONFIG=-C $(DIR)/avrdude.conf
 AVRDUDE_FLAGS=-F
