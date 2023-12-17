@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "AVR",
+            "includePath": [
+                "/home/dawid/repos/avr/blink/**",
+                "/usr/lib/avr/include/"
+            ],
+            "defines": ["__AVR_ATmega32U4__"],
+            "compilerPath": "/usr/bin/avr-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-mmcu=atmega32u4",
+                "-DF_CPU=16000000UL",
+                "-Os"
+            ],
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "/home/dawid/repos/avr/blink/**",
+                    "/home/dawid/repos/avr/blink"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
