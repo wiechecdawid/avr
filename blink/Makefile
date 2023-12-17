@@ -1,6 +1,6 @@
 SRC=blink
 CXX=avr-gcc
-DIR=/..
+DIR=..
 
 # Compiler config
 MCU=-mmcu=atmega328p
